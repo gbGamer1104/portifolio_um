@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o documento como HTML5 e especifica a linguagem como português brasileiro -->
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a viewport para garantir que a página seja renderizada corretamente em dispositivos móveis -->
+    <title>Formulário Financeiro</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="pagina_tres.css">
+    <!-- Link para o arquivo CSS externo que contém os estilos da página -->
+</head>
+<body>
+    <div class="container">
+        <!-- Div principal que envolve todo o conteúdo da página -->
+        <div class="form-container">
+            <!-- Div que contém o formulário -->
+            <h1 class="title">Solicitação de Auxílio</h1>
+            <!-- Título da página/formulário -->
+            <form action="#" method="POST" id="myForm">
+                <!-- Início do formulário com método POST -->
+                <div class="form-group">
+                    <!-- Div para agrupar o label e o select da situação empregatícia -->
+                    <label for="situacao">Situação Empregatícia:</label>
+                    <!-- Label para o select de situação empregatícia -->
+                    <select id="situacao" name="situacao">
+                        <!-- Select para escolher a situação empregatícia -->
+                        <option value="" disabled selected>Selecione...</option>
+                        <!-- Opção padrão que está desabilitada e selecionada inicialmente -->
+                        <option value="empregado">Trabalhando - CLT</option>
+                        <!-- Opção para quem está empregado com carteira assinada -->
+                        <option value="informal">Trabalhando - Informal</option>
+                        <!-- Opção para quem trabalha de forma informal -->
+                        <option value="desempregado">Desempregado</option>
+                        <!-- Opção para quem está desempregado -->
+                        <option value="outro">Outro</option>
+                        <!-- Opção para outras situações não listadas -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <!-- Div para agrupar o label e o input da renda mensal -->
+                    <label for="renda">Renda Mensal (em R$):</label>
+                    <!-- Label para o input de renda mensal -->
+                    <input type="text" id="renda" name="renda">
+                    <!-- Input de texto para informar a renda mensal -->
+                </div>
+                <div class="form-group">
+                    <!-- Div para agrupar o label e o input do número de dependentes -->
+                    <label for="dependentes">Número de Pessoas Mantidas:</label>
+                    <!-- Label para o input do número de dependentes -->
+                    <input type="number" id="dependentes" name="dependentes">
+                    <!-- Input numérico para informar o número de dependentes -->
+                </div>
+                <div class="form-group">
+                    <!-- Div para agrupar o label e o textarea da mensagem -->
+                    <label for="mensagem">Mensagem:</label>
+                    <!-- Label para o textarea da mensagem -->
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Insira uma breve explicação do porquê de você estar solicitando o auxílio..."></textarea>
+                    <!-- Textarea para escrever uma mensagem explicativa -->
+                </div>
+                <button type="submit">Enviar</button>
+                <!-- Botão de submissão do formulário -->
+            </form>
+
+            <div id="overlay" class="overlay" style="display: none;">
+                <!-- Div que serve como overlay para exibir uma mensagem de confirmação; inicialmente está oculta -->
+                <div class="overlay-content">
+                    <!-- Div que contém o conteúdo do overlay -->
+                    <p>Suas informações foram enviadas com sucesso!</p>
+                    <!-- Parágrafo com a mensagem de confirmação -->
+                    <button id="closeOverlay">Fechar</button>
+                    <!-- Botão para fechar o overlay -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="pagina_tres.js"></script>
+    <!-- Link para o arquivo JavaScript externo que contém as funcionalidades da página -->
+</body>
+</html>

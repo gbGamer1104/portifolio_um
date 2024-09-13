@@ -1,0 +1,108 @@
+/* Estiliza o corpo da página */
+body {
+    display: flex; /* Define o layout flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura como 100% da altura da viewport */
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/013/227/541/small_2x/background-graphics-with-light-purple-white-black-gradients-use-designs-for-web-pages-apps-mobile-text-backgrounds-screens-wallpapers-decorations-and-art-design-elements-photo.jpg'); /* Define a imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+/* Estiliza o container principal */
+.container {
+    display: flex; /* Define o layout flexbox */
+    width: 90%; /* Define a largura do container */
+    height: 90%; /* Define a altura do container */
+    border-radius: 15px; /* Arredonda os cantos */
+    overflow: hidden; /* Oculta o conteúdo que excede o limite do container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor do container */
+    background-color: #d6c1e7; /* Define a cor de fundo do container */
+    margin: 20px; /* Adiciona margem ao redor do container */
+}
+
+/* Estiliza a seção esquerda do container */
+.left-side {
+    width: 50%; /* Define a largura da seção esquerda */
+    display: flex; /* Define o layout flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    background-color: #c5a3dd; /* Define a cor de fundo da seção esquerda */
+}
+
+/* Estiliza a imagem dentro da seção esquerda */
+.left-side img {
+    max-width: 90%; /* Define a largura máxima da imagem */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+}
+
+/* Estiliza a seção direita do container */
+.right-side {
+    width: 50%; /* Define a largura da seção direita */
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura total do elemento */
+    background-color: #d6c1e7; /* Define a cor de fundo da seção direita */
+    display: flex; /* Define o layout flexbox */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estiliza o título */
+.title {
+    text-align: center; /* Centraliza o texto */
+    font-size: 24px; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    color: #4a148c; /* Define a cor do texto */
+}
+
+/* Estiliza o formulário */
+form {
+    width: 100%; /* Define a largura do formulário */
+    max-width: 400px; /* Define a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+/* Estiliza os grupos de formulário */
+.form-group {
+    margin-bottom: 15px; /* Adiciona margem inferior */
+}
+
+/* Estiliza os rótulos dos campos de formulário */
+.form-group label {
+    display: block; /* Define o display como bloco */
+    margin-bottom: 5px; /* Adiciona margem inferior */
+    color: #4a148c; /* Define a cor do texto */
+}
+
+/* Estiliza os campos de entrada e seleção */
+.form-group input, .form-group select {
+    width: 100%; /* Define a largura como 100% do contêiner pai */
+    padding: 8px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+    border: 1px solid #a076d4; /* Define a cor e espessura da borda */
+    border-radius: 5px; /* Arredonda os cantos */
+    background-color: #ffffff; /* Define a cor de fundo */
+    color: #4a148c; /* Define a cor do texto */
+}
+
+/* Estiliza o botão */
+button {
+    width: 100%; /* Define a largura como 100% do contêiner pai */
+    padding: 10px; /* Adiciona espaçamento interno */
+    background-color: #4a148c; /* Define a cor de fundo */
+    color: #ffffff; /* Define a cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Arredonda os cantos */
+    cursor: pointer; /* Define o cursor como uma mãozinha ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Adiciona transição suave na cor de fundo */
+    margin-top: 15px; /* Adiciona margem superior */
+}
+
+/* Estiliza o botão ao passar o mouse */
+button:hover {
+    background-color: #7b1fa2; /* Muda a cor de fundo ao passar o mouse */
+}

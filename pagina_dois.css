@@ -1,0 +1,100 @@
+body {
+    display: flex; /* Define um layout flexível para o corpo da página */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    height: 100vh; /* Define a altura da viewport como 100% da altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    font-family: Arial, sans-serif; /* Define a fonte do corpo do texto */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/013/227/541/small_2x/background-graphics-with-light-purple-white-black-gradients-use-designs-for-web-pages-apps-mobile-text-backgrounds-screens-wallpapers-decorations-and-art-design-elements-photo.jpg'); /* Define uma imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+.container {
+    display: flex; /* Define um layout flexível para o container */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do container */
+    align-items: center; /* Centraliza verticalmente o conteúdo do container */
+    width: 100%; /* Define a largura do container como 100% */
+}
+
+.form-container {
+    display: flex; /* Define um layout flexível para o form-container */
+    width: 90%; /* Define a largura do form-container como 90% */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura e altura */
+    background-color: #d6c1e7; /* Define uma cor de fundo roxa pastel mais forte */
+    border-radius: 10px; /* Define bordas arredondadas de 10px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+.left-side,
+.right-side {
+    width: 50%; /* Define a largura de cada lado como 50% */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura e altura */
+}
+
+.left-side {
+    background-color: #c5a3dd; /* Define a cor de fundo da seção esquerda */
+}
+
+.right-side {
+    background-color: #c5a3dd; /* Define a cor de fundo da seção direita */
+}
+
+form {
+    width: 100%; /* Define a largura do formulário como 100% */
+    display: flex; /* Define um layout flexível para o formulário */
+    flex-wrap: wrap; /* Permite que os elementos flex se quebrem em várias linhas */
+    justify-content: space-between; /* Espaça os elementos flexíveis uniformemente */
+}
+
+.form-group {
+    width: calc(50% - 10px); /* Calcula a largura para incluir o espaçamento */
+    padding-right: 10px; /* Adiciona um preenchimento interno à direita de 10px */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura e altura */
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15px */
+}
+
+.form-group:last-child {
+    padding-right: 0; /* Remove o preenchimento interno à direita do último campo */
+}
+
+.form-group label {
+    display: block; /* Exibe o elemento como um bloco */
+    margin-bottom: 5px; /* Adiciona uma margem inferior de 5px */
+    color: #4a148c; /* Define a cor do texto como roxo escuro */
+}
+
+.form-group input, .form-group select {
+    width: 100%; /* Define a largura como 100% */
+    padding: 8px; /* Adiciona um preenchimento interno de 8px */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura e altura */
+    border: 1px solid #a076d4; /* Define uma borda com cor roxa clara mais forte */
+    border-radius: 5px; /* Define bordas arredondadas de 5px */
+    background-color: #ffffff; /* Define a cor de fundo como branco */
+    color: #4a148c; /* Define a cor do texto como roxo escuro */
+}
+
+.form-group select {
+    appearance: none; /* Remove o estilo padrão do seletor */
+    -webkit-appearance: none; /* Remove o estilo padrão do seletor no WebKit */
+    -moz-appearance: none; /* Remove o estilo padrão do seletor no Firefox */
+}
+
+button {
+    width: 100%; /* Define a largura do botão como 100% */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px */
+    background-color: #4a148c; /* Define a cor de fundo como roxo escuro */
+    color: #ffffff; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Define bordas arredondadas de 5px */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor do fundo */
+    margin-top: 15px; /* Adiciona uma margem superior de 15px */
+}
+
+button:hover {
+    background-color: #7b1fa2; /* Define uma cor de fundo mais escura quando o botão é hover */
+}
