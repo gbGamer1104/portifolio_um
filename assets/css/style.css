@@ -1,0 +1,27 @@
+.texto{
+    height: 10px;
+}
+
+.col-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mb-3{
+    margin: 30px;
+}
+
+.form-control{
+    height: 80%;
+}
+
+.btn{
+    margin: 30px;
+}
+
+.logo{
+    height: 97%;
+    width: 97%;
+}
